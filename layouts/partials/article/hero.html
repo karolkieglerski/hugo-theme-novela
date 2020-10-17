@@ -5,7 +5,9 @@
             <div class="article-hero-subtitle">
                 <div class="article-meta">
                     {{ partial "article/authors.html" . }}
-                    {{ .Page.Date.Format "January 2, 2006" }}
+                    {{ with .Date }}
+                        {{ partial "date.html" (dict "date" . "language" $.Page.Language "months_polish" $.Site.Data.months_polish) }}
+                    {{ end }}
                     • {{ .ReadingTime }} min na przeczytanie
                 </div>
             </div>

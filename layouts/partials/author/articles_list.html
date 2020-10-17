@@ -20,7 +20,9 @@
                     {{ .Params.excerpt }}
                   </p>
                   <div class="article-metadata">
-                    {{ .Date.Format "January 2, 2006" }} • {{ .ReadingTime }} min na przeczytanie
+                    {{ with $article.Date }}
+                        {{ partial "date.html" (dict "date" . "language" $.Page.Language "months_polish" $.Site.Data.months_polish) }}
+                    {{ end }}  • {{ .ReadingTime }} min na przeczytanie
                   </div>
                 </div>
               </div>
