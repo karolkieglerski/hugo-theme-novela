@@ -2,3 +2,20 @@ baseURL: "https://example.com"
 languageCode: "en-us"
 title: "Hugo Novela"
 pygmentsstyle: 'monokai'
+menu:
+  main:
+  - identifier: home
+    name: home
+    title: homepage
+    url: /
+    weight: -100
+  - identifier: blog
+    name: blog
+    title: blog section
+    url: /blog/
+    weight: -50
+  - identifier: about
+    name: about
+    title: about section
+    url: /about/
+    weight: -10

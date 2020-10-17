@@ -1,0 +1,13 @@
+.sidebar-nav > .sidebar-nav-item{
+    color: var(--grey);
+    margin: 10px;
+}
+
+.sidebar-nav > .sidebar-nav-item.active{
+    color: var(--grey);
+    font-weight: bold;
+}
+.sidebar-nav > .sidebar-nav-item:hover{
+    color: #000;
+    text-decoration: none;
+}
