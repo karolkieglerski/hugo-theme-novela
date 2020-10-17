@@ -47,7 +47,9 @@ of the whole section and append them to our $next slice. */}}
                                 {{ $article.Params.excerpt }}
                             </p>
                             <div class="article-metadata">
-                                {{ $article.Date | dateFormat "January 2, 2006" }} · {{ $article.ReadingTime }} min na przeczytanie
+                                {{ with $article.Date }}
+                                    {{ partial "date.html" (dict "date" . "language" $.Page.Language "months_polish" $.Site.Data.months_polish) }}
+                                {{ end }} · {{ $article.ReadingTime }} min na przeczytanie
                             </div>
                         </div>
                     </div>
