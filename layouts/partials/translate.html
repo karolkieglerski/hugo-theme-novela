@@ -1,0 +1,8 @@
+<div class="language-dropdown">
+  <button class="language-dropbtn">Lang</button>
+  <div class="language-dropdown-content">
+    {{ range $.Site.Home.AllTranslations }}
+    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+    {{ end }}
+  </div>
+</div>

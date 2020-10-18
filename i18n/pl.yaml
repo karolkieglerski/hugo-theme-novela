@@ -1,0 +1,9 @@
+- id: readingTime
+  translation: 
+    one: "Minuta na przeczytanie"
+    few: "{{.Count}} minuty na przeczytanie"
+    many: "{{.Count}} minuty na przeczytanie"
+    other: "{{.Count}} minut na przeczytanie"
+- id: moreArticles
+  translation: 
+    other: "Wiecej artykułów od"

@@ -8,7 +8,7 @@
                     {{ with .Date }}
                         {{ partial "date.html" (dict "date" . "language" $.Page.Language "months_polish" $.Site.Data.months_polish) }}
                     {{ end }}
-                    • {{ .ReadingTime }} min na przeczytanie
+                    • {{ i18n "readingTime" .ReadingTime }}
                 </div>
             </div>
         </header>
