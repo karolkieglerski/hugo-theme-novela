@@ -15,4 +15,4 @@ min_version = "0.55.0"
 [original]
     name = "The New Dynamic"
     homepage = "https://www.thenewdynamic.com/"
-    repo = "https://github.com/forestryio/novela-hugo-starter
+    repo = "https://github.com/forestryio/novela-hugo-starter"
